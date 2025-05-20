@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Preview Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Note: js-yaml and marked.min.js are not required by this specific set of changes,
+         but would be included here if Markdown processing was part of the user_initial_request or current changes. -->
+</head>
+<body class="bg-black text-white min-h-screen font-sans">
+    <div class="container mx-auto px-4 py-8">
+        <header class="mb-8 text-center">
+            <h1 class="text-4xl font-bold text-amber-400">Egg Preview Generator</h1>
+            <p class="text-gray-300 mt-2">Mix and match components to create your perfect design</p>
+        </header>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left Panel (Controls) -->
+            <div class="w-full lg:w-1/3 bg-gray-900 rounded-lg p-6 shadow-lg control-panel-container">
+                <h2 class="text-2xl font-semibold text-amber-400 mb-6">Configuration Controls</h2>
+                
+                <!-- Top Zone Controls -->
+                <div class="mb-6 p-4 border rounded-md control-panel-section">
+                    <h3 class="text-xl font-semibold text-white mb-4">Top Part Configuration</h3>
+                    
+                    <div class="mb-4">
+                        <label for="top-metal" class="block text-sm font-medium text-gray-300 mb-1">Metal Type</label>
+                        <select id="top-metal" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Top">
+                            <option value="Luna">Luna (White Gold)</option>
+                            <option value="Solaris">Solaris (Yellow Gold)</option>
+                            <option value="Eos">Eos (Rose Gold)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="top-colorway" class="block text-sm font-medium text-gray-300 mb-1">Colorway</label>
+                        <select id="top-colorway" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Top">
+                            <option value="Ice">Ice ❄️ (Diamond/Clear)</option>
+                            <option value="Aurora">Aurora 🌊 (Blue)</option>
+                            <option value="Eden">Eden 🍃 (Green)</option>
+                            <option value="Ember">Ember 🔥 (Red)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="top-part" class="block text-sm font-medium text-gray-300 mb-1">Part Name</label>
+                        <select id="top-part" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Top">
+                            <option value="">Select a part...</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Shoulder Zone Controls -->
+                <div class="mb-6 p-4 border rounded-md control-panel-section">
+                    <h3 class="text-xl font-semibold text-white mb-4">Shoulder Part Configuration</h3>
+                    
+                    <div class="mb-4">
+                        <label for="shoulder-metal" class="block text-sm font-medium text-gray-300 mb-1">Metal Type</label>
+                        <select id="shoulder-metal" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Shoulder">
+                            <option value="Luna">Luna (White Gold)</option>
+                            <option value="Solaris">Solaris (Yellow Gold)</option>
+                            <option value="Eos">Eos (Rose Gold)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="shoulder-colorway" class="block text-sm font-medium text-gray-300 mb-1">Colorway</label>
+                        <select id="shoulder-colorway" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Shoulder">
+                            <option value="Ice">Ice ❄️ (Diamond/Clear)</option>
+                            <option value="Aurora">Aurora 🌊 (Blue)</option>
+                            <option value="Eden">Eden 🍃 (Green)</option>
+                            <option value="Ember">Ember 🔥 (Red)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="shoulder-part" class="block text-sm font-medium text-gray-300 mb-1">Part Name</label>
+                        <select id="shoulder-part" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Shoulder">
+                            <option value="">Select a part...</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Belly Zone Controls -->
+                <div class="mb-6 p-4 border rounded-md control-panel-section">
+                    <h3 class="text-xl font-semibold text-white mb-4">Belly Part Configuration</h3>
+                    
+                    <div class="mb-4">
+                        <label for="belly-metal" class="block text-sm font-medium text-gray-300 mb-1">Metal Type</label>
+                        <select id="belly-metal" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Belly">
+                            <option value="Luna">Luna (White Gold)</option>
+                            <option value="Solaris">Solaris (Yellow Gold)</option>
+                            <option value="Eos">Eos (Rose Gold)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="belly-colorway" class="block text-sm font-medium text-gray-300 mb-1">Colorway</label>
+                        <select id="belly-colorway" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Belly">
+                            <option value="Ice">Ice ❄️ (Diamond/Clear)</option>
+                            <option value="Aurora">Aurora 🌊 (Blue)</option>
+                            <option value="Eden">Eden 🍃 (Green)</option>
+                            <option value="Ember">Ember 🔥 (Red)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="belly-part" class="block text-sm font-medium text-gray-300 mb-1">Part Name</label>
+                        <select id="belly-part" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Belly">
+                            <option value="">Select a part...</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Bottom Zone Controls -->
+                <div class="mb-4 p-4 border rounded-md control-panel-section"> <!-- Adjusted mb-4 from mb-8 for last item -->
+                    <h3 class="text-xl font-semibold text-white mb-4">Bottom Part Configuration</h3>
+                    
+                    <div class="mb-4">
+                        <label for="bottom-metal" class="block text-sm font-medium text-gray-300 mb-1">Metal Type</label>
+                        <select id="bottom-metal" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Bottom">
+                            <option value="Luna">Luna (White Gold)</option>
+                            <option value="Solaris">Solaris (Yellow Gold)</option>
+                            <option value="Eos">Eos (Rose Gold)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="bottom-colorway" class="block text-sm font-medium text-gray-300 mb-1">Colorway</label>
+                        <select id="bottom-colorway" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Bottom">
+                            <option value="Ice">Ice ❄️ (Diamond/Clear)</option>
+                            <option value="Aurora">Aurora 🌊 (Blue)</option>
+                            <option value="Eden">Eden 🍃 (Green)</option>
+                            <option value="Ember">Ember 🔥 (Red)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="bottom-part" class="block text-sm font-medium text-gray-300 mb-1">Part Name</label>
+                        <select id="bottom-part" class="w-full bg-gray-800 border-gray-700 rounded-md p-2 text-white focus:ring-amber-500 focus:border-amber-500" data-zone="Bottom">
+                            <option value="">Select a part...</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="export-btn" class="w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-3 px-4 rounded-md transition-colors mt-6">
+                    Save Preview
+                </button>
+            </div>
+            
+            <!-- Right Panel (Preview) -->
+            <div class="w-full lg:w-2/3">
+                <div class="bg-gray-900 rounded-lg p-6 shadow-lg h-full flex flex-col preview-panel-container">
+                    <h2 class="text-2xl font-semibold text-amber-400 mb-6">Egg Preview</h2>
+                    
+                    <div class="relative mx-auto preview-container" style="width: 800px; height: 800px; max-width: 100%;">
+                        <div id="preview-canvas" class="w-full h-full relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-md overflow-hidden">
+                            <!-- Images will be dynamically inserted here -->
+                            <div id="loading-indicator" class="absolute inset-0 flex items-center justify-center text-center p-4">
+                                <p class="text-gray-400">Select components to preview your egg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-6 text-gray-500 mt-12">
+        <p>Egg Preview Generator &copy; 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
