@@ -1,0 +1,210 @@
+{
+  "Top": {
+    "Luna": {
+      "Ember": [
+        "Orbit.2.png",
+        "Deep Orbit.2.png"
+      ],
+      "Ice": [
+        "Deep Orbit.1.png",
+        "Orbit.1.png"
+      ],
+      "Aurora": [
+        "Orbit.png",
+        "Deep Orbit.png"
+      ],
+      "Eden": [
+        "Orbit.png",
+        "Deep Orbit.png"
+      ]
+    },
+    "Solaris": {
+      "Ember": [
+        "Orbit.6.png",
+        "Deep Orbit.6.png"
+      ],
+      "Ice": [
+        "Orbit.5.png",
+        "Deep Orbit.5.png"
+      ],
+      "Aurora": [
+        "Orbit.8.png",
+        "Deep Orbit.8.png"
+      ],
+      "Eden": [
+        "Orbit.7.png",
+        "Deep Orbit.7.png"
+      ]
+    },
+    "Eos": {
+      "Ice": [
+        "Orbit.5.png",
+        "Deep Orbit.5.png"
+      ],
+      "Aurora": [
+        "Orbit.12.png",
+        "Deep Orbit.12.png"
+      ],
+      "Eden": [
+        "Orbit.11.png",
+        "Deep Orbit.11.png"
+      ],
+      "Ember": [
+        "Orbit.10.png",
+        "Deep Orbit.10.png"
+      ]
+    }
+  },
+  "Shoulder": {
+    "Eos": {
+      "Aurora": [
+        "Master Manifestoor.12.png",
+        "Manifestoor.12.png"
+      ],
+      "Ice": [
+        "Manifestoor.9.png",
+        "Master Manifestoor.9.png"
+      ],
+      "Ember": [
+        "Manifestoor.10.png",
+        "Master Manifestoor.10.png"
+      ],
+      "Eden": [
+        "Manifestoor.11.png",
+        "Master Manifestoor.11.png"
+      ]
+    },
+    "Luna": {
+      "Ice": [
+        "Master Manifestoor.1.png"
+      ],
+      "Ember": [
+        "Manifestoor.2.png"
+      ],
+      "Eden": [
+        "Manifestoor.3.png",
+        "Master Manifestoor.3.png"
+      ],
+      "Aurora": [
+        "Manifestoor.4.png",
+        "Master Manifestoor.4.png"
+      ]
+    },
+    "Solaris": {
+      "Aurora": [
+        "Manifestoor.8.png",
+        "Master Manifestoor.8.png"
+      ],
+      "Ice": [
+        "Manifestoor.5.png",
+        "Master Manifestoor.5.png"
+      ],
+      "Ember": [
+        "Manifestoor.6.png",
+        "Master Manifestoor.6.png"
+      ],
+      "Eden": [
+        "Manifestoor.7.png",
+        "Master Manifestoor.7.png"
+      ]
+    }
+  },
+  "Belly": {
+    "Eos": {
+      "Aurora": [
+        "Return to Otherside.12.png"
+      ],
+      "Ice": [
+        "Return to Otherside.9.png"
+      ],
+      "Ember": [
+        "Return to Otherside.10.png"
+      ],
+      "Eden": [
+        "Return to Otherside.11.png"
+      ]
+    },
+    "Luna": {
+      "Aurora": [
+        "Return to Otherside.4.png"
+      ],
+      "Ice": [
+        "Return to Otherside.1.png"
+      ],
+      "Ember": [
+        "Return to Otherside.2.png"
+      ],
+      "Eden": [
+        "Return to Otherside.3.png"
+      ]
+    },
+    "Solaris": {
+      "Aurora": [
+        "Return to Otherside.8.png"
+      ],
+      "Ice": [
+        "Return to Otherside.5.png"
+      ],
+      "Ember": [
+        "Return to Otherside.6.png"
+      ],
+      "Eden": [
+        "Return to Otherside.7.png"
+      ]
+    }
+  },
+  "Bottom": {
+    "Eos": {
+      "Aurora": [],
+      "Ice": [],
+      "Ember": [],
+      "Eden": [],
+      "": [
+        "Kingfish.9.png",
+        "Kingfish.10.png",
+        "Kingfish.11.png",
+        "Kingfish.12.png",
+        "Web Nebula.9.png",
+        "Web Nebula.10.png",
+        "Web Nebula.11.png",
+        "Web Nebula.12.png"
+      ]
+    },
+    "Luna": {
+      "Aurora": [
+        "Kingfish.4.png",
+        "Web Nebula.4.png"
+      ],
+      "Ice": [
+        "Web Nebula.1.png",
+        "Kingfish.1.png"
+      ],
+      "Ember": [
+        "Web Nebula.2.png",
+        "Kingfish.2.png"
+      ],
+      "Eden": [
+        "Kingfish.3.png",
+        "Web Nebula.3.png"
+      ]
+    },
+    "Solaris": {
+      "Aurora": [
+        "Kingfish.8.png",
+        "Web Nebula.8.png"
+      ],
+      "Ice": [
+        "Kingfish.5.png",
+        "Web Nebula.5.png"
+      ],
+      "Ember": [
+        "Kingfish.6.png",
+        "Web Nebula.6.png"
+      ],
+      "Eden": [
+        "Kingfish.7.png",
+        "Web Nebula.7.png"
+      ]
+    }
+  }
+}
